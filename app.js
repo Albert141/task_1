@@ -38,7 +38,6 @@ const postSchema = new mongoose.Schema({
         coordinates: [Number] // [longitude, latitude]
     }
 });
-postSchema.index({ location: '2dsphere' }); // Create a 2dsphere index on location field
 const Post = mongoose.model('Post', postSchema);
 
 
